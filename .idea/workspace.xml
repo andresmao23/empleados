@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6b4a9b8-7094-4a6a-889b-7a0d638c2815" name="Default Changelist" comment="" />
+    <list default="true" id="f6b4a9b8-7094-4a6a-889b-7a0d638c2815" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/persona/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/persona/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/persona/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/persona/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/persona/prueba.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/persona/prueba.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Ztt3dDTGfGagIDcNajUfNw1cYS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,10 +34,12 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/applications/persona" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/applications/persona" />
       <recent name="$PROJECT_DIR$/applications/departamento" />
       <recent name="$PROJECT_DIR$/empleados/applications/persona" />
@@ -48,10 +60,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1585942195335">
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1586023482999">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1585942195335" />
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1586023482999" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
