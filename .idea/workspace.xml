@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/applications/persona/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/persona/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/applications/persona/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/persona/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/nav.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +33,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/persona" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/persona" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/applications/persona" />
       <recent name="$PROJECT_DIR$/applications/departamento" />
       <recent name="$PROJECT_DIR$/empleados/applications/persona" />
-      <recent name="$PROJECT_DIR$/empleados/applications/departamento" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -59,10 +58,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1586113742952">
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1586138068467">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1586113742952" />
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1586138068467" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

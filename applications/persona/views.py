@@ -14,3 +14,11 @@ class ListAllEmpleadosView(ListView):
     template_name = "persona/list_all.html"
     model = Empleado
     context_object_name = 'lista'
+
+class ListByAreaEmpleadosView(ListView):
+    template_name = "persona/list_by_area.html"
+
+    def get_queryset(self):
+        area = self.kwargs['name']
+        lista = Empleado.objects.filter(departamento__name=area)
+        return lista
