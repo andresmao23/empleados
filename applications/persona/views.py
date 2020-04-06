@@ -13,6 +13,7 @@ class IndexView(TemplateView):
 class ListAllEmpleadosView(ListView):
     template_name = "persona/list_all.html"
     model = Empleado
+    paginate_by = 4
     context_object_name = 'lista'
 
 class ListByAreaEmpleadosView(ListView):
@@ -21,4 +22,13 @@ class ListByAreaEmpleadosView(ListView):
     def get_queryset(self):
         area = self.kwargs['name']
         lista = Empleado.objects.filter(departamento__name=area)
+        return lista
+
+class BuscarEmpleadoByKwordView(ListView):
+    template_name = "persona/buscar_empleado.html"
+    context_object_name = 'empleados'
+
+    def get_queryset(self):
+        palabra_clave = self.request.GET.get("kword", '')
+        lista = Empleado.objects.filter(last_name=palabra_clave)
         return lista

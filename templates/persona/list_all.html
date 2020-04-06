@@ -25,4 +25,26 @@
     {% endfor %}
     </tbody>
 </table>
+{% if is_paginated %}
+    <nav aria-label="Pagination">
+         <ul class="pagination text-center">
+            {% if page_obj.has_previous %}
+                <li class="pagination-previows"><a href="?page={{page_obj.previous_page_number}}">&laquo; Atras</a></li>
+            {% endif %}
+
+            {% for pagina in paginator.page_range%}
+                {% ifequal pagina page_obj.number %}
+                    <li class="current"><span class="show-for-sr">You're on page</span>{{pagina}}</li>
+                {% else %}
+                    <li><a href="?page={{pagina}}" aria-label="Page 2">{{pagina}}</a></li>
+                {% endifequal %}
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+                <!--li><a href="?page={{ page_obj.paginator.num_pages }}">Última</a></li-->
+                <li class="pagination-next"><a href="?page={{ page_obj.next_page_number }}">Siguiente</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+{% endif %}
 {% endblock content %}

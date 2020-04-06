@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Buscar empleado{% endblock title %}
+
+{% block content %}
+<h1 style="text-align:center;">Buscar empleado por palabra clave</h1>
+
+<form method="get">{% csrf_token %}
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="large-10 medium-6 small-12 cell">
+                <input type="text" name="kword" id="kword" placeholder="Ingrese texto aqui">
+            </div>
+            <div class="large-2 medium-6 small-12 cell">
+                <button type="submit" class="button expanded">Buscar</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<table>
+      <thead>
+        <tr>
+          <th width="200">Nombres</th>
+          <th>Apellidos</th>
+          <th width="150">Departamento</th>
+          <th width="150">Acción</th>
+        </tr>
+      </thead>
+    <tbody>
+    {% for e in empleados %}
+        <tr>
+            <td>{{e.first_name}}</td>
+            <td>{{e.last_name}}</td>
+            <td>{{e.departamento}}</td>
+            <td><a href="#" class="button warning">Ver</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
