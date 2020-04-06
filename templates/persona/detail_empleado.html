@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalle empleado{% endblock title %}
+
+{% block content %}
+<h1 style="text-align:center;">Información detallada de un empleado</h1>
+
+<h3>Nombre: </h3>
+<h5>{{empleado.first_name}}</h5>
+<h3>Apellidos: </h3>
+<h5>{{empleado.last_name}}</h5>
+<h3>Departamento: </h3>
+<h5>{{empleado.departamento}}</h5>
+<h3>Habilidades: </h3>
+<ul>
+{% for habilidad in empleado.habilidad.all %}
+  <li>{{habilidad.name}}</li>
+  {% empty %}
+  <li>El empleado NO tiene habilidades para mostrar.</li>
+{% endfor %}
+</ul>
+
+{% endblock content %}

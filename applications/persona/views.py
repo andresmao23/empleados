@@ -2,7 +2,8 @@ from django.shortcuts import render
 from .models import Empleado
 from django.views.generic import (
     TemplateView,
-    ListView
+    ListView,
+    DetailView
     )
 
 # Create your views here.
@@ -32,3 +33,9 @@ class BuscarEmpleadoByKwordView(ListView):
         palabra_clave = self.request.GET.get("kword", '')
         lista = Empleado.objects.filter(last_name=palabra_clave)
         return lista
+
+class EmpleadoDetailView(DetailView):
+    template_name = 'persona/detail_empleado.html'
+    model = Empleado
+    context_object_name = 'empleado'
+
