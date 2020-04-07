@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Modificar empleado{% endblock title %}
+
+{% block content %}
+<h1 style="text-align:center;">Actualizar los datos de un empleado</h1>
+<div class="grid-container">
+    <form method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Actualizar" class="button">
+    </form>
+</div>
+
+{% endblock content %}

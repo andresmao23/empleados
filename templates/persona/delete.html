@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Eliminar empleado{% endblock title %}
+
+{% block content %}
+<h1 style="text-align:center;">Eliminar empleado</h1>
+<div class="grid-container">
+    <form method="post">{% csrf_token %}
+        <h4>Estás seguro que quieres eliminar el empleado "{{ object }}"?</h4>
+        <a href="{% url 'persona:list-all' %}" class="button">Cancelar</a>
+        <input type="submit" value="Confirmar" class="alert button">
+    </form>
+</div>
+
+{% endblock content %}

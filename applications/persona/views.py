@@ -1,9 +1,13 @@
 from django.shortcuts import render
+from django.urls import reverse_lazy
 from .models import Empleado
 from django.views.generic import (
     TemplateView,
     ListView,
-    DetailView
+    DetailView,
+    CreateView,
+    UpdateView,
+    DeleteView
     )
 
 # Create your views here.
@@ -39,3 +43,28 @@ class EmpleadoDetailView(DetailView):
     model = Empleado
     context_object_name = 'empleado'
 
+class SuccessView(TemplateView):
+    template_name = 'persona/success.html'
+
+class EmpleadoCreateView(CreateView):
+    template_name = 'persona/add.html'
+    model = Empleado
+    fields = ('__all__')
+    success_url = reverse_lazy('persona:success')
+
+class SuccessUpdateView(TemplateView):
+    template_name = 'persona/update-success.html'
+
+class EmpleadoUpdateView(UpdateView):
+    template_name = 'persona/update.html'
+    model = Empleado
+    fields = ('__all__')
+    success_url = reverse_lazy('persona:update-success')
+
+class SuccessDeleteUpdateView(TemplateView):
+    template_name = 'persona/delete-success.html'
+
+class EmpleadoDeleteView(DeleteView):
+    template_name = 'persona/delete.html'
+    model = Empleado
+    success_url = reverse_lazy('persona:empleado-delete-success')
