@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f6b4a9b8-7094-4a6a-889b-7a0d638c2815" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/persona/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/persona/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/applications/persona/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/persona/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -58,10 +57,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1586223111760">
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1586285712570">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741/1366.0.3840.2160@0.27.1366.741" timestamp="1586223111760" />
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741/1366.0.3840.2160@0.27.1366.741" timestamp="1586285712570" />
     <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1586178965556" />
   </component>
   <component name="XDebuggerManager">

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from .models import Empleado
+from .forms import EmpleadoForm
 from django.views.generic import (
     TemplateView,
     ListView,
@@ -49,7 +50,8 @@ class SuccessView(TemplateView):
 class EmpleadoCreateView(CreateView):
     template_name = 'persona/add.html'
     model = Empleado
-    fields = ('__all__')
+    #fields = ('__all__')
+    form_class = EmpleadoForm
     success_url = reverse_lazy('persona:success')
 
 class SuccessUpdateView(TemplateView):
